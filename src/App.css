@@ -1,0 +1,52 @@
+body {
+  background-color: #141414;
+  color: aliceblue;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* Ensures items don't wrap to the next line */
+  overflow-x: auto;
+  /* Adds horizontal scroll if needed */
+}
+.movie-item {
+  margin-right: 20px;
+  /* Add some space between items */
+  flex: 0 0 auto;
+  /* Prevents items from shrinking */
+}
+/* Optional: styling for the container to handle overflow */
+.movie-list::-webkit-scrollbar {
+  height: 10px;
+}
+
+/*Horizontal Scrolling line*/
+.movie-list::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.image-container:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  background: rgb(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
