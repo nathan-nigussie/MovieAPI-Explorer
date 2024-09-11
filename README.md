@@ -4,7 +4,8 @@ This project is a React-based web application that allows users to search for mo
 # Features:
 Movie Search: Enter a keyword in the search bar to fetch and display a list of matching movies.
 Dynamic Display: The movie list updates in real-time as the user types, ensuring a smooth and responsive user experience.
-# API Integration: Fetches data from a free movie API, providing real-time access to movie information such as title, poster, and release year.
+# API Integration:
+Fetches data from a free movie API, providing real-time access to movie information such as title, poster, and release year.
 ## Technologies Used:
 React JS: For building the user interface.
 JavaScript (ES6+): For handling logic and API requests.
